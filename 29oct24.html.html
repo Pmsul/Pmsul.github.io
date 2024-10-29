@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #filed{
+            width: 1080px;
+            height: 800px;
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="filed" onclick="createalex(event)"></div>
+</body>
+<script>
+    let filed = document.getElementById('filed');
+
+    function showCoord(event){
+        console.log(event.clientX+':'+event.clientY);
+        
+    }
+
+    function createalex(event){
+        let alex = document.createElement('img');
+        alex.src = 'alex.GIF';
+        document.body.append(alex);
+
+let left = 100;
+let step = 2;
+
+        alex.style.position = 'fixed';
+        alex.style.top = '100px';
+        alex.style.left = left + 'px';
+
+        function movealex(){
+            left = left + step;
+            if (left > 1000){
+                step = step *(-1);
+            }
+            alex.style.transform = 'rotateY(180deg)';
+            if (left < 0){
+                step = step *(-1);
+            }
+            alex.style.transform = 'rotateY(0deg)';
+            alex.style.left = left + 'px';
+        }
+        
+
+        setInterval(movealex, 1);
+    }
+        
+</script>
+</html>
