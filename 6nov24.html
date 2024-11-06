@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    for(let i = 1;i <101;i++){
+    let a = document.createElement('div');
+    a.style.width = "100px";
+    a.style.height = "100px";
+    a.style.border = "1px solid";
+    a.style.textAlign = "center"
+    a.style.fontSize = "10px"
+    a.innerHTML = i
+    document.body.append(a);
+
+    for(let b = 1;b <10;b++){
+    let redcube = document.createElement('div');
+    redcube.style.width = "15px";
+    redcube.style.height = "15px";
+    redcube.style.backgroundColor = "green";
+    redcube.innerHTML = b
+
+    a.append(redcube);
+    }
+    }
+
+</script>
+</html>
