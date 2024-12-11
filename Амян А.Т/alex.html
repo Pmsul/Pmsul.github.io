@@ -6,9 +6,46 @@
     <title>DIV</title>
 <head>
     <style>
+
+h4 {
+  text-indent: 50px;
+}
+
+h5 {
+  text-indent: 50px;
+}
+
+h6 {
+  text-indent: 50px;
+}
+
+h7 {
+  text-indent: 50px;
+}
+
+h8 {
+  text-indent: 50px;
+}
+
+.container{ 
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-12 {
+    height: 30px;
+width: 55px;
+border: 2px solid rgb(255, 255, 255);
+margin-left: 71px;
+background-color: rgb(0, 117, 6);
+border-radius: 10px;
+}
+
+
+
         .box-11 {
-            height: 45px;
-width: 170px;
+            height: 30px;
+width: 120px;
 border: 2px solid rgb(255, 255, 255);
 margin-left: 40px;
 background-color: blue;
@@ -63,11 +100,11 @@ border-radius: 10px;
             border: 10px solid rgb(255, 255, 255);
             border-left: 0px;
             border-right: 0px;
-             height: 280px;
+             height: 395px;
              border-bottom: 5px;
              border-top: 5px;
             width: 100%;
-            margin-bottom: 70px;
+            margin-bottom: 120px;
             box-shadow: 8px 10px 8px;
             
             background: repeating-linear-gradient(
@@ -84,8 +121,8 @@ border-radius: 10px;
             border: 10px solid rgb(255, 255, 255);
             border-left: 0px;
             border-right: 0px;
-            margin-bottom: 70px;
-            height: 280px;
+            margin-bottom: 120px;
+            height: 360px;
             border-bottom: 5px;
             border-top: 5px;
             width: 100%;
@@ -103,11 +140,11 @@ border-radius: 10px;
             border: 10px solid rgb(0, 0, 0);
             border-left: 0px;
             border-right: 0px;
-            height: 300px;
+            height: 417px;
             border-top: 5px;
             width: 100%;
             box-shadow: 8px 10px 8px;
-            margin-bottom: 70px;
+            margin-bottom: 120px;
             border-bottom-color: rgba(255,255,255,0.5);
             background-color: rgb(255, 255, 255);
         }
@@ -117,10 +154,10 @@ border-radius: 10px;
             border: 10px solid rgb(255, 255, 255);
             border-left: 0px;
             border-right: 0px;
-            height: 280px;
+            height: 368px;
             width: 100%;
             box-shadow: 8px 10px 8px;
-            margin-bottom: 70px;
+            margin-bottom: 120px;
             border-bottom: 5px;
             border-top: 5px;
             background: repeating-linear-gradient(
@@ -136,14 +173,14 @@ border-radius: 10px;
             border-left: 0px;
             border-right: 0px;
             
-            height: 266px;
+            height: 365px;
             width: 100%;
             border-bottom: 7px;
             border-top: 5px;
             box-shadow: 8px 10px 8px;
             background-color: rgb(255, 1, 35);
             border-bottom-color: rgb(255, 1, 35);
-            margin-bottom: 70px;
+            margin-bottom: 120px;
 
         }
         
@@ -183,27 +220,33 @@ border-radius: 10px;
 
       background-color: green;
         }
+
+        .card { 
+   width: fit-content; 
+}
+
         
         .card{
             
-            width: 150px;
+            width: 250px;
             display: flex;
             flex-direction: column;
             align-items: center;
             border: 2px solid rgb(0, 0, 0);
             border-radius: 15px;
-            background-color: rgb(17, 177, 3);
+            background-color: rgb(255, 251, 0);
             
         }
         .card img {
-            width: 95%;
+            width: 90%;
         }
     .card h1 {
-        font-size: 20px;
+        font-size: 35px;
         color: rgb(1, 44, 1);
     }
     .card p{
         text-align: center;
+        font-size: 19px;
     }
     .card_price{
         display: flex;
@@ -214,9 +257,19 @@ border-radius: 10px;
     }
         </style>
 </head>
-<body style="background-color: rgb(167, 255, 167);"></body>
+<body style=" background: repeating-linear-gradient(
+    45deg,
+    rgb(191, 255, 182),
+    rgb(191, 255, 182) 130px,
+    rgb(135, 255, 111) 130px,
+    rgb(135, 255, 111) 260px
+        );"></body>
 <div class="box-11">
-    <a href="URL"> <h9 style="font-size: 30px; color: white;">Регистрация</h9></a></div>
+    <a href="URL"> <h9 style="font-size: 20px; color: white;">Регистрация</h9>
+    </a></div>
+    <div class="box-12"><a href="URL"><h10 style="font-size: 20px; color: white;">Вход</h10></a></div>
+
+
    
 
 
@@ -234,22 +287,35 @@ border-radius: 10px;
          ведь именно в этом сезоне Лионель Месси забил 91 гол,
           данный рекорд до сих пор никто не повторил</h4> 
         </div>
-    <div class="card">
-        <h1>Форма</h1>
-        <img src="kartinki/Futbolka BAR.jpg" alt="">
-        <p>Легендарная форма Барселоны 2012 года</p>
-        <div class="card_price">
-            <p>Цена</p>
-            <h2>1499 р</h2>
-        </div>
-        </div>
-        </div>
+
+     
+
+       
+<div class="container">
+            <div class="card">
+                <h1>Форма</h1>
+                <img src="kartinki/Futbolka BAR.jpg" alt="">
+                <p>Легендарная форма Барселоны 2012 года</p>
+                <div class="card_price">
+                    <p>Цена</p>
+                    <h2>1499 р</h2>
+                </div>
+                </div>
+                </div>
+
+            </div>
+        
+              
+        
+    
         <div class="box-7">
         <div class="box-2">
  <h5 style="color:rgb(255, 255, 255);">Форма МЮ 2024 года, данный сезон является одним из самых важных за последние годы,
      ведь у МЮ новый перспективный тренер, Рубен Аморим
       и многие считают что он сможет быть главным тренером МЮ на многие годы</h5>
 </div>
+
+<div class="container">
         <div class="card">
             <h1>Форма</h1>
             <img src="kartinki/Futbolka MU.jpg" alt="">
@@ -260,14 +326,16 @@ border-radius: 10px;
             </div>
             </div>
             </div>
+        </div>
             <div class="box-8">
             <div class="box-3">
-<h6 style="color: rgb(255, 255, 255);;">Форма Мадридского Реала 2024, один из интереснейших сезонов для фанатов сливочных,
+<h6 style="color: rgb(255, 255, 255);">Форма Мадридского Реала 2024, один из интереснейших сезонов для фанатов сливочных,
      туда в летнее трансферное окно перешел Киллиан Мбаппе, самый долгожданный трансфер для реала, 
      но пока что Киллиан демонстрирует себя не лучшим образом,
       посморим на его статистику в конце сезона....</h6>
 </div>
-            <div class="card">
+
+<div class="container">  <div class="card">
                 <h1>Форма</h1>
                 <img src="kartinki/Futbolka RMA.jpg" alt="">
                 <p>Форма Реал Мадрид 2024 года</p>
@@ -276,15 +344,17 @@ border-radius: 10px;
                     <h2>1199 р</h2>
                 </div>
                 </div>
-                </div>
+                </div></div>
+          
                 <div class="box-9">
                 <div class="box-4">
-<h7 style="color: rgb(255, 255, 255);;">Форма байера 2024 года. Сезон 2023-24 был выдающимся,
+<h7 style="color: rgb(255, 255, 255);">Форма байера 2024 года. Сезон 2023-24 был выдающимся,
      всего одно поражение, от Аталанты в финале ЛЕ, данный сезон интересен тем,
       насколько сильно Байер сможет помешать своим более сильным оппонентам в ЛЧ,
        и до какой стадии они дойдут</h7>
 </div> 
-                <div class="card">
+
+<div class="container">  <div class="card">
                     <h1>Форма</h1>
                     <img src="kartinki/Futbolka Bayer.jpg" alt="">
                     <p>Форма Байера 2024 года</p>
@@ -293,15 +363,16 @@ border-radius: 10px;
                         <h2> 999 р</h2>
                     </div>
                     </div>
-                    </div>
+                    </div></div>
+              
                     <div class="box-10">
                     <div class="box-5">
-<h8 style="color: rgb(255, 255, 255);;">Легендарная форма Ливерпуля 2005 года, форма в которой они обыграли Милан 2-3 по пенальти,
+<h8 style="color: rgb(255, 255, 255);">Легендарная форма Ливерпуля 2005 года, форма в которой они обыграли Милан 2-3 по пенальти,
      запонился данный матч тем что в конце первого тайма Милан обыгрывал своих оппонентов 3-0,
       но начиная со второго тайма ливерпуль сделал великий камбек, 3-3.</h8>
       </div>
       
-                    <div class="card">
+      <div class="container">   <div class="card">
                         <h1>Форма</h1>
                         <img src="kartinki/Futbolka liver.jpg" alt="">
                         <p>Легендарная форма Ливерпуля 2005 года</p>
@@ -310,7 +381,8 @@ border-radius: 10px;
                             <h2> 1599 р</h2>
                         </div>
                         </div>
-                        </div>
+                        </div></div>
+                 
 
 
 </body>
