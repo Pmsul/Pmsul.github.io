@@ -24,3 +24,5 @@ DELETE FROM ИМЯ_ТАБЛИЦЫ;
 DELETE FROM ИМЯ_ТАБЛИЦЫ WHERE УСЛОВИЕ;
 
 UPDATE ИМЯ_ТАБЛИЦЫ SET ИМЯ_ИЗМЕНЯЕМОГО_СТОЛБЦА WHERE УСЛОВИЕ;
+
+create table requests (id int not null AUTO_INCREMENT primary key, userId int not null, message text not null, datetime datetime not null)
